@@ -4,24 +4,7 @@
 <template>
     <div class="main" :class="{'main-hide-text': shrink}" ref="scrollBar">
         <div class="sidebar-menu-con" :style="{width: shrink?'60px':'200px', overflow: shrink ? 'visible' : 'auto'}">
-            <!-- <scroll-bar ref="scrollBar">
-                <shrinkable-menu 
-                    :shrink="shrink"
-                    @on-change="handleSubmenuChange"
-                    :theme="menuTheme" 
-                    :before-push="beforePush"
-                    :open-names="openedSubmenuArr"
-                    :menu-list="menuList">
-                    <div slot="top" class="logo-con">
-                        <p>澳绿宝溯源项目</p>
-                        <p>管理后台</p>
-                        
-                    </div>
-                </shrinkable-menu> -->
-                
-            <!-- </scroll-bar> -->
             <div class="logo-con">
-                <p>澳绿宝溯源项目</p>
                 <p>管理后台</p>
             </div>
             <menu-link :menu-list="menuList"></menu-link>
@@ -39,11 +22,6 @@
                     </div>
                 </div>
                 <div class="header-avator-con">
-                    <!-- <full-screen v-model="isFullScreen" @on-change="fullscreenChange"></full-screen> -->
-                    <!-- <lock-screen></lock-screen> -->
-                    <!-- <message-tip v-model="mesCount"></message-tip> -->
-                    <!-- <theme-switch></theme-switch> -->
-                    
                     <div class="user-dropdown-menu-con">
                         <Row type="flex" justify="end" align="middle" class="user-dropdown-innercon">
                             <Dropdown transfer trigger="click" @on-click="handleClickUserDropdown">

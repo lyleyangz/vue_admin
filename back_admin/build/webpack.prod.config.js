@@ -75,7 +75,7 @@ module.exports = merge(webpackBaseConfig, {
             ]
         }),
         new HtmlWebpackPlugin({
-            title: '澳绿宝溯源项目管理后台 v' + package.version,
+            title: '管理后台 v' + package.version,
             favicon: './td_icon.ico',
             filename: '../index.html',
             template: '!!ejs-loader!./src/common/template/index.ejs',

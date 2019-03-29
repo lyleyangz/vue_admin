@@ -10,7 +10,7 @@ const menuList = [{
             title: "溯源商品统计",
             key: "1011",
         },{
-            title: "NFC使用次数统计",
+            title: "使用次数统计",
             key: "1012",
         }]
     },{

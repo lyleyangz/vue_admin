@@ -8,7 +8,7 @@ export function getCountGoods (params = {}) {
         params: params
     });
 }
-// NFC统计
+// 统计
 export function getNFC (params = {}) {
     return http({
         url: '/service/app/v1/admin/statistics/nfc',
@@ -17,7 +17,7 @@ export function getNFC (params = {}) {
     });
 }
 
-// NFC统计
+// 统计
 export function getCountNFC (params = {}) {
     return http({
         url: '/service/app/v1/admin/statistics/wmcount',

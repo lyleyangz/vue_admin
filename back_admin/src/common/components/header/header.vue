@@ -7,7 +7,7 @@
         <div class="header-con">
             <div class="logo">
                 <span class="icon f-db"></span>
-                <span class="title">澳绿宝溯源项目</span>
+                <span class="title">管理后台</span>
             </div>
         </div>
     </div>

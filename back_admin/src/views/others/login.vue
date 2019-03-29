@@ -7,7 +7,7 @@
         <com-header></com-header>
         <div class="content f-pr">
             <div class="info f-pa">
-                <h2 class="title">澳绿宝溯源项目管理后台</h2>
+                <h2 class="title">管理后台</h2>
                 <ul class="input-wraper-list">
                     <li class="input-wraper">
                         <span class="icon f-db"></span>

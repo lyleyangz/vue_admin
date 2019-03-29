@@ -40,7 +40,7 @@ module.exports = merge(webpackBaseConfig, {
             minChunks: Infinity
         }),
         new HtmlWebpackPlugin({
-            title: '澳绿宝溯源项目管理后台 v' + package.version,
+            title: '管理后台 v' + package.version,
             filename: '../index.html',
             inject: false
         }),

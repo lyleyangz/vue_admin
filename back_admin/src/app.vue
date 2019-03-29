@@ -13,7 +13,7 @@
             };
         },
         created() {
-            document.title = '澳绿宝溯源项目管理后台';
+            document.title = '管理后台';
         },
         mounted () {
 
