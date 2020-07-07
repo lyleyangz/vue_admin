@@ -7,10 +7,10 @@ const webpackBaseConfig = require('./webpack.base.config.js');
 const fs = require('fs');
 const package = require('../package.json');
 
-fs.open('./build/env.js', 'w', function(err, fd) {
-    const buf = 'export default "development";';
-    fs.write(fd, buf, 0, buf.length, 0, function(err, written, buffer) {});
-});
+// fs.open('./build/env.js', 'w', function(err, fd) {
+//     const buf = 'export default "development";';
+//     fs.write(fd, buf, 0, buf.length, 0, function(err, written, buffer) {});
+// });
 
 module.exports = merge(webpackBaseConfig, {
     devtool: '#source-map',
@@ -22,7 +22,7 @@ module.exports = merge(webpackBaseConfig, {
     // proxyTable: {
 
     //   '/api/': {
-    //     target: 'http://exchang.dev1.xsl.ph', // 开发调试接口地址
+    //     target: '127.0.0.1:3030', // 开发调试接口地址
     //     changeOrigin: true,
     //     withCredentials: true
     //     // onProxyRes: function(proxyRes, req, res) {
@@ -64,11 +64,8 @@ module.exports = merge(webpackBaseConfig, {
         proxy: {
           //// =========================== https设置 =====================================
           // 代理所有的以 /api 开头的请求到 https://xxxx.com
-          '/jewel-openapi/': {
-            // target: 'http://10.88.88.20:8080',
-            target: 'http://47.75.178.24:8080',
-            // target: 'http://10.88.88.189:8989',
-            //target: 'https://xcx.lingane-sport.com',
+          '/': {
+            target: '',
             changeOrigin: true,
             secure: false
           }

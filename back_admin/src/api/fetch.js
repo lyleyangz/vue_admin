@@ -12,7 +12,7 @@ iview.Message.config({
 
 // 根据域名判断请求的接口
 // const baseUrl = '/open';
-const baseUrl = '/jewel-openapi';
+const baseUrl = '/';
 
 
 // 允许带上cookie

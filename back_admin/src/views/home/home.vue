@@ -13,7 +13,7 @@
         </Col> -->
         <Col v-if="auth && globalFun.userAuth.checkAuth(auth,'1011')">
             <Card class="goods-count">
-                <p slot="title">溯源商品统计</p>
+                <p slot="title">商品统计</p>
                 <div class="goodsCount-list f-cb">
                     <div class="count f-fl">
                         <infor-card
@@ -103,7 +103,7 @@
         </Col> -->
         <Col v-if="auth && globalFun.userAuth.checkAuth(auth,'1012')">
             <Card class="ratioCount">
-            <p slot="title">NFC使用次数统计</p>
+            <p slot="title">使用次数统计</p>
             <Row class="filter">
                 <Col>
                 <div class="statistics f-cb">
@@ -137,7 +137,7 @@
                 </div>   
                 </Col>
                 <Col>
-                    <span>近一周NFC使用统计 </span>
+                    <span>近一周使用统计 </span>
                     <span class="screening-conditions f-fr">
                         <RadioGroup v-model="params.type" type="button" @on-change="selectChange">
                             <Radio label="1"><span>本周</span></Radio>
@@ -235,7 +235,7 @@ export default {
   mounted() {
 		this.globalFun.userAuth.getAuth(data=>{
             this.auth = data;
-            this.init();
+            // this.init();
         });
 	},
   methods: {
@@ -262,7 +262,7 @@ export default {
                   type: _this.params.type,
               }
           }
-          this.getNFC(_this.params)
+        //   this.getNFC(_this.params)
           
       },
     deteChange(data) {

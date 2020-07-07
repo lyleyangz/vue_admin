@@ -39,6 +39,7 @@
 import { login, getValCode } from '../../api/api_group.js';
 import header from '../../common/components/header/header';
 import md5 from '../../common/libs/md5.js';
+import meus from '../../common/router/menu.js'
 export default {
     data () {
         return {
@@ -78,61 +79,66 @@ export default {
         //     });
         // },
         handleSubmit () {
-            
-            for (let i in this.formInfo) {
-                if (this.globalFun.isStrEmpty(this.formInfo[i])) {
-                    this.$Message.error(this.formInfoEmptyMessage[i]);
-                    return;
-                }
+            let a = [];
+            for (let i in meus) {
+                a.push(meus[i])
             }
-            if (this.formInfo.password.length > 15 || this.formInfo.password.length < 6) {
-                this.$Message.error('请输入6-15位密码');
-                return false;
-            } 
-            if(!this.login.is){
-                this.login = {
-                    is: true,
-                    name: '登录中...'
-                };
-                let param = {
-                    account: this.formInfo.userName,
-                    passwd: md5(this.formInfo.password),
-                    // imgCode: this.formInfo.valCode
-                }
-                login(param).then((res) => {
-                    this.login = {
-                        is: false,
-                        name: '登录'
-                    };
-                    if (res.code == 200) {
-                        if(res.data.flag){
-                            if(!res.data.permission){
-                                this.$Message.error({
-                                    content: '没有设置权限，请联系管理员',
-                                    duration: 3
-                                });
-                                return false;
-                            }
-                            this.$Message.success({
-                                content: '登录成功，即将跳转首页',
-                                duration: 3
-                            });
-                            sessionStorage.setItem("userName",this.formInfo.userName);
-                            sessionStorage.setItem("token",res.data.token);
-                            sessionStorage.setItem("permission",res.data.permission);
-                            this.$store.commit('clearAllTags');
+            console.log(a)
+            sessionStorage.setItem("permission",a);
+            // for (let i in this.formInfo) {
+            //     if (this.globalFun.isStrEmpty(this.formInfo[i])) {
+            //         this.$Message.error(this.formInfoEmptyMessage[i]);
+            //         return;
+            //     }
+            // }
+            // if (this.formInfo.password.length > 15 || this.formInfo.password.length < 6) {
+            //     this.$Message.error('请输入6-15位密码');
+            //     return false;
+            // } 
+            // if(!this.login.is){
+            //     this.login = {
+            //         is: true,
+            //         name: '登录中...'
+            //     };
+            //     let param = {
+            //         account: this.formInfo.userName,
+            //         passwd: md5(this.formInfo.password),
+            //         // imgCode: this.formInfo.valCode
+            //     }
+            //     login(param).then((res) => {
+            //         this.login = {
+            //             is: false,
+            //             name: '登录'
+            //         };
+            //         if (res.code == 200) {
+            //             if(res.data.flag){
+            //                 if(!res.data.permission){
+            //                     this.$Message.error({
+            //                         content: '没有设置权限，请联系管理员',
+            //                         duration: 3
+            //                     });
+            //                     return false;
+            //                 }
+            //                 this.$Message.success({
+            //                     content: '登录成功，即将跳转首页',
+            //                     duration: 3
+            //                 });
+            //                 sessionStorage.setItem("userName",this.formInfo.userName);
+            //                 sessionStorage.setItem("token",res.data.token);
+            //                 sessionStorage.setItem("permission",res.data.permission);
+            //                 this.$store.commit('clearAllTags');
                             setTimeout(() => {
                                 this.$router.push({
                                     path: '/home'
                                 });
                             }, 1000);
-                        }else{
-                            this.$Message.error("用户名或密码错误");
-                        }
+            //             }else{
+            //                 this.$Message.error("用户名或密码错误");
+            //             }
                         
-                    }
-                })
-            }
+            //     }
+            // })
+            // }
             
         },
         redirect(path) {
