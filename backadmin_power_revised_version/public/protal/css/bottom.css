@@ -1,0 +1,50 @@
+.bottom {
+  margin-top: 8px;
+  width: 100%;
+  background: #fbfbfb;
+}
+.bottom .bottom-container-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+.bottom .bottom-container-wrapper .bottom-container {
+  padding: 0 16px 0 61px;
+}
+.bottom .bottom-container-wrapper .bottom-container .botcontainer-detailed {
+  height: 252px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom .bottom-container-wrapper .bottom-container .botcontainer-detailed-logo {
+  margin-top: 41px;
+}
+.bottom .bottom-container-wrapper .bottom-container .botcontainer-detailed-logo img {
+  width: 185px;
+  height: 53px;
+}
+.bottom .bottom-container-wrapper .bottom-container .botcontainer-detailed-about-wrapper {
+  display: flex;
+  margin-top: 32px;
+}
+.bottom .bottom-container-wrapper .bottom-container .botcontainer-detailed-about {
+  line-height: 22px;
+}
+.bottom .bottom-container-wrapper .bottom-container .botcontainer-detailed-about .title {
+  margin-right: 80px;
+  margin-bottom: 16px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.87);
+}
+.bottom .bottom-container-wrapper .bottom-container .botcontainer-detailed-about .title-link {
+  color: rgba(0, 0, 0, 0.54);
+}
+.bottom .bottom-container-wrapper .bottom-container .botcontainer-detailed-about .about-text {
+  margin-bottom: 8px;
+}
+.bottom .botcontainer-foot {
+  height: 47px;
+  color: rgba(0, 0, 0, 0.38);
+  line-height: 47px;
+  padding-left: 421px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}

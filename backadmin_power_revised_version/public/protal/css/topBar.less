@@ -1,0 +1,47 @@
+.topbar {
+  width: 100%;
+  background: rgba(26, 26, 31, 1);
+  display: flex;
+  .topbar-item {
+    flex: 1;
+    border-right: 2px solid rgb(54, 50, 50);
+    padding: 9px 24px 13px;
+    &-first {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: rgba(255, 255, 255, 1);
+      margin-bottom: 2px;
+    }
+    &-title {
+      height: 24px;
+      opacity: 0.87;
+      font-size: 12px;
+      line-height: 2;
+      color: #ffffff;
+    }
+    &-value {
+      height: 24px;
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 2;
+      color: rgba(255, 255, 255, 0.87);
+    }
+    &-change {
+      height: 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .topbar-item-icon {
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+    &-percent {
+      height: 22px;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 1.22;
+    }
+  }
+}

@@ -1,0 +1,271 @@
+.content {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+.content-commonlyweb {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  padding: 0 21px;
+}
+.content-commonlyweb .commonlyweb-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 128px;
+  height: 108px;
+  margin-right: 78px;
+  margin-bottom: 16px;
+}
+.content-commonlyweb .commonlyweb-item-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 8px 0 10px;
+}
+.content-commonlyweb .commonlyweb-item-title {
+  font-size: 12px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.87);
+}
+.content-commonlyweb .commonlyweb-item:nth-child(6n) {
+  margin-right: 0;
+}
+.content-commonlyweb .commonlyweb-item:nth-child(n + 12) {
+  margin-bottom: 0;
+}
+.content-commonlyweb .commonlyweb-item:hover {
+  border-radius: 4px;
+  box-shadow: 0 10px 16px 0 rgba(202, 202, 202, 0.5);
+}
+.nav {
+  width: 100%;
+  background: #ffffff;
+}
+.nav .nav-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+.nav .nav-title-wrapper .nav-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.87);
+}
+.nav .nav-title-wrapper .nav-title-icon {
+  font-family: FontAwesome5Free-Solid;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.87);
+  margin-right: 23px;
+}
+.nav .nav-container-wrapper {
+  display: block;
+}
+.nav .nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 22px 0 16px 0;
+}
+.nav .nav-container a {
+  margin: 0 40px 32px 0;
+}
+.nav .nav-container a:nth-child(5n) {
+  margin-right: 0;
+}
+.nav .nav-container-item {
+  position: relative;
+  width: 208px;
+  height: 130px;
+  border-radius: 2px;
+  border: solid 1px #ebebeb;
+  box-sizing: border-box;
+  transition: all 200ms ease-in;
+}
+.nav .nav-container-item-avatar {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 72px;
+}
+.nav .nav-container-item-title {
+  position: absolute;
+  top: 86px;
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.87);
+}
+.nav .nav-container-item-detail {
+  position: absolute;
+  bottom: 8px;
+  width: 193px;
+  display: none;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.54);
+  padding: 0 8px;
+}
+.nav .nav-container .nav-container-item:hover {
+  transform: scale(1, 1.25);
+  border: 1px solid transparent;
+  border-radius: 2px;
+  box-shadow: 0 10px 16px 0 rgba(202, 202, 202, 0.5);
+}
+.nav .nav-container .nav-container-item:hover .nav-container-item-avatar {
+  transform: scale(1, 0.8);
+  top: 3px;
+}
+.nav .nav-container .nav-container-item:hover .nav-container-item-title {
+  transform: scale(1, 0.8);
+  top: 60px;
+}
+.nav .nav-container .nav-container-item:hover .nav-container-item-detail {
+  display: block;
+  transform: scale(1, 0.8);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.content-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+.content-bottom .content-recommond {
+  width: 840px;
+}
+.content-bottom .content-recommond .recommond-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 24px;
+}
+.content-bottom .content-recommond .recommond-content {
+  width: 100%;
+}
+.content-bottom .content-recommond .recommond-content-item {
+  display: flex;
+  width: 100%;
+  margin-bottom: 16px;
+}
+.content-bottom .content-recommond .recommond-content-item .item-avatar {
+  width: 200px;
+  height: 150px;
+  margin-right: 36px;
+}
+.content-bottom .content-recommond .recommond-content-item .item-content .item-origin {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.54);
+}
+.content-bottom .content-recommond .recommond-content-item .item-content .item-origin span:first-child {
+  margin-right: 8px;
+}
+.content-bottom .content-recommond .recommond-content-item .item-content .item-title {
+  width: 588px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 8px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.content-bottom .content-recommond .recommond-content-item .item-content .item-text {
+  width: 588px;
+  color: rgba(0, 0, 0, 0.87);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.content-bottom .content-recommond .recommond-content-item:last-child {
+  margin-bottom: 0;
+}
+.content-bottom .content-economics {
+  width: 312px;
+}
+.content-bottom .content-economics .economics-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 24px;
+}
+.content-bottom .content-economics .economics-content {
+  width: 312px;
+  height: 648px;
+  overflow: hidden;
+  overflow-y: auto;
+  border: solid 1px #ebebeb;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+.content-bottom .content-economics .economics-content::-webkit-scrollbar {
+  width: 10px;
+}
+.content-bottom .content-economics .economics-content::-webkit-scrollbar-thumb {
+  background: #bfbfbf;
+  border-radius: 10px;
+}
+.content-bottom .content-economics .economics-content::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+.content-bottom .content-economics .economics-content-item {
+  padding-top: 24px;
+}
+.content-bottom .content-economics .economics-content-item .item-time {
+  margin-bottom: 8px;
+}
+.content-bottom .content-economics .economics-content-item .item-time span {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.54);
+  margin-right: 8px;
+}
+.content-bottom .content-economics .economics-content-item .item-time img {
+  width: 29.7px;
+  height: 19.8px;
+}
+.content-bottom .content-economics .economics-content-item .item-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 8px;
+}
+.content-bottom .content-economics .economics-content-item .item-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.content-bottom .content-economics .economics-content-item .item-center .item-star .icon {
+  font-weight: 14px;
+  color: #ebebeb;
+}
+.content-bottom .content-economics .economics-content-item .item-center .item-star .icon1 {
+  font-weight: 14px;
+  color: #f2b43f;
+}
+.content-bottom .content-economics .economics-content-item .item-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content-bottom .content-economics .economics-content-item .item-bottom .item-value {
+  color: rgba(0, 0, 0, 0.87);
+}
+.content-bottom .content-economics .economics-content-item .item-bottom .item-value .after {
+  margin-bottom: 4px;
+}
+.content-bottom .content-economics .economics-content-item .item-bottom .item-btn {
+  width: 96px;
+  height: 36px;
+  line-height: 36px;
+  background-color: #03afe5;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.87);
+}

@@ -1,0 +1,282 @@
+.content {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+//1.常用网址部分
+.content-commonlyweb {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  padding: 0 21px;
+  .commonlyweb-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 128px;
+    height: 108px;
+    margin-right: 78px;
+    margin-bottom: 16px;
+    &-avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin: 8px 0 10px;
+    }
+    &-title {
+      font-size: 12px;
+      font-weight: bold;
+      color: rgba(0, 0, 0, 0.87);
+    }
+    &:nth-child(6n) {
+      margin-right: 0;
+    }
+    &:nth-child(n + 12) {
+      margin-bottom: 0;
+    }
+    &:hover {
+      border-radius: 4px;
+      box-shadow: 0 10px 16px 0 rgba(202, 202, 202, 0.5);
+    }
+  }
+}
+//2.导航部分
+.nav {
+  width: 100%;
+  background: rgba(255, 255, 255, 1);
+
+  .nav-title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    .nav-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: rgba(0, 0, 0, 0.87);
+    }
+    .nav-title-icon {
+      font-family: FontAwesome5Free-Solid;
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.87);
+      margin-right: 23px;
+    }
+  }
+  .nav-container-wrapper {
+    display: block;
+  }
+  .nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 22px 0 16px 0;
+    a {
+      margin: 0 40px 32px 0;
+    }
+    a:nth-child(5n) {
+      margin-right: 0;
+    }
+    &-item {
+      position: relative;
+      width: 208px;
+      height: 130px;
+      border-radius: 2px;
+      border: solid 1px #ebebeb;
+      box-sizing: border-box;
+      transition: all 200ms ease-in;
+      &-avatar {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 100%;
+        height: 72px;
+      }
+      &-title {
+        position: absolute;
+        top: 86px;
+        width: 100%;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.87);
+      }
+      &-detail {
+        position: absolute;
+        bottom: 8px;
+        width: 193px;
+        display: none;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.54);
+        padding: 0 8px;
+      }
+    }
+    .nav-container-item:hover {
+      // height: 162px;
+      transform: scale(1, 1.25);
+      border: 1px solid transparent;
+      border-radius: 2px;
+      box-shadow: 0 10px 16px 0 rgba(202, 202, 202, 0.5);
+      .nav-container-item-avatar {
+        transform: scale(1, 0.8);
+        top: 3px;
+      }
+      .nav-container-item-title {
+        transform: scale(1, 0.8);
+        top: 60px;
+      }
+      .nav-container-item-detail {
+        display: block;
+        transform: scale(1, 0.8);
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+.content-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+  //3.推荐资讯
+  .content-recommond {
+    width: 840px;
+    .recommond-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: rgba(0, 0, 0, 0.87);
+      margin-bottom: 24px;
+    }
+    .recommond-content {
+      width: 100%;
+      &-item {
+        display: flex;
+        width: 100%;
+        margin-bottom: 16px;
+        .item-avatar {
+          width: 200px;
+          height: 150px;
+          margin-right: 36px;
+        }
+        .item-content {
+          .item-origin {
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.54);
+            span:first-child {
+              margin-right: 8px;
+            }
+          }
+          .item-title {
+            width: 588px;
+            font-size: 20px;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.87);
+            margin: 8px 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          .item-text {
+            width: 588px;
+            color: rgba(0, 0, 0, 0.87);
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+          }
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  //4.财经日历
+  .content-economics {
+    width: 312px;
+    .economics-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: rgba(0, 0, 0, 0.87);
+      margin-bottom: 24px;
+    }
+    .economics-content {
+      width: 312px;
+      height: 648px;
+      overflow: hidden;
+      overflow-y: auto;
+      border: solid 1px #ebebeb;
+      padding: 0 16px;
+      box-sizing: border-box;
+      &::-webkit-scrollbar {
+        width: 10px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #bfbfbf;
+        border-radius: 10px;
+      }
+      &::-webkit-scrollbar-thumb:hover {
+        background: #a8a8a8;
+      }
+      &-item {
+        padding-top: 24px;
+        .item-time {
+          margin-bottom: 8px;
+          span {
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.54);
+            margin-right: 8px;
+          }
+          img {
+            width: 29.7px;
+            height: 19.8px;
+          }
+        }
+        .item-title {
+          font-size: 18px;
+          font-weight: bold;
+          color: rgba(0, 0, 0, 0.87);
+          margin-bottom: 8px;
+        }
+        .item-center {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 12px;
+          .item-star {
+            .icon {
+              font-weight: 14px;
+              color: #ebebeb;
+            }
+            .icon1 {
+              font-weight: 14px;
+              color: #f2b43f;
+            }
+          }
+        }
+        .item-bottom {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .item-value {
+            color: rgba(0, 0, 0, 0.87);
+            .after {
+              margin-bottom: 4px;
+            }
+          }
+          .item-btn {
+            width: 96px;
+            height: 36px;
+            line-height: 36px;
+            background-color: #03afe5;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.87);
+          }
+        }
+      }
+    }
+  }
+}

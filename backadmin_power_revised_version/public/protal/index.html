@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/topBar.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/search1.css" />
+    <link rel="stylesheet" href="./css/bottom.css" />
+    <link rel="stylesheet" href="./css/content.css" />
+    <link rel="stylesheet" href="./css/fixed.css" />
+    <!-- 引入字体图标 -->
+    <script src="./js/iconfont.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/template-web.js"></script>
+  </head>
+  <body>
+    <div class="portal-container-bg">
+      <!-- 1.topBar -->
+      <div class="topbar">
+        <!-- <div class="topbar-item">
+          <div class="topbar-item-first">
+            <div class="topbar-item-title arial">AUDUSD</div>
+            <div class="topbar-item-value arial">+5.3%</div>
+          </div>
+          <div class="topbar-item-change">
+            <div class="topbar-item-percent green arial">0.59735(+0.00150)</div>
+            <svg class="topbar-item-icon icon green" aria-hidden="true">
+              <use xlink:href="#icon-arrow_up"></use>
+            </svg>
+          </div>
+        </div> -->
+      </div>
+      <!-- 2.search -->
+      <div class="navbar">
+        <div class="navbar-search-wrapper">
+          <div class="navbar-search-content">
+            <!-- 2.1 logo部分 -->
+            <div class="navbar-logo">
+              <img class="navbar-logo-img" src="./avatar/logo1.png" alt="logo.png" />
+            </div>
+            <!-- 2.2 search部分 -->
+            <div class="navbar-search">
+              <ul class="navbar-searach-select">
+                <li class="active pointer">百度</li>
+                <li class="pointer">Google</li>
+                <li class="pointer">搜狗</li>
+                <li class="dealer pointer">查交易商</li>
+              </ul>
+              <div class="navbar-search-input">
+                <input type="text" placeholder="输入关键字" />
+              </div>
+            </div>
+            <!-- 2.3 button部分 -->
+            <div class="navbar-btn">
+              <button class="search pointer">搜索</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 3.content -->
+      <div class="content">
+        <!-- 3.1常用网站 -->
+        <div class="content-commonlyweb">
+          <!-- <div class="commonlyweb-item pointer">
+            <img
+              class="commonlyweb-item-avatar"
+              src="./avatar/logo1.png"
+              alt=""
+            />
+            <span class="commonlyweb-item-title">金十快讯</span>
+          </div> -->
+        </div>
+        <!-- 3.2 导航部分 -->
+        <div class="nav">
+          <!-- <div class="nav-item">
+            <div class="nav-title-wrapper">
+              <span class="nav-title">资讯</span>
+              <svg class="nav-title-icon icon pointer" aria-hidden="true">
+                <use xlink:href="#icon-arrow_down"></use>
+              </svg>
+            </div>
+            <div id="navContainer" class="nav-container">
+              <div class="nav-container-item pointer">
+                <img
+                  class="nav-container-item-avatar"
+                  src="./avatar/logo1.png"
+                  alt=""
+                />
+                <div class="nav-container-item-title">
+                  雅虎财经
+                </div>
+                <div class="nav-container-item-detail">
+                  一份以英語發行，財經報導為主，總部位於英國倫敦
+                </div>
+              </div>
+              <div class="nav-container-item pointer">
+                <img
+                  class="nav-container-item-avatar"
+                  src="./avatar/logo1.png"
+                  alt=""
+                />
+                <div class="nav-container-item-title">
+                  雅虎财经
+                </div>
+                <div class="nav-container-item-detail">
+                  一份以英語發行，財經報導為主，總部位於英國倫敦
+                </div>
+              </div>
+              <div class="nav-container-item pointer">
+                <img
+                  class="nav-container-item-avatar"
+                  src="./avatar/logo1.png"
+                  alt=""
+                />
+                <div class="nav-container-item-title">
+                  雅虎财经
+                </div>
+                <div class="nav-container-item-detail">
+                  一份以英語發行，財經報導為主，總部位於英國倫敦
+                </div>
+              </div>
+              <div class="nav-container-item pointer">
+                <img
+                  class="nav-container-item-avatar"
+                  src="./avatar/logo1.png"
+                  alt=""
+                />
+                <div class="nav-container-item-title">
+                  雅虎财经
+                </div>
+                <div class="nav-container-item-detail">
+                  一份以英語發行，財經報導為主，總部位於英國倫敦
+                </div>
+              </div>
+              <div class="nav-container-item pointer">
+                <img
+                  class="nav-container-item-avatar"
+                  src="./avatar/logo1.png"
+                  alt=""
+                />
+                <div class="nav-container-item-title">
+                  雅虎财经
+                </div>
+                <div class="nav-container-item-detail">
+                  一份以英語發行，財經報導為主，總部位於英國倫敦
+                </div>
+              </div>
+              <div class="nav-container-item pointer">
+                <img
+                  class="nav-container-item-avatar"
+                  src="./avatar/logo1.png"
+                  alt=""
+                />
+                <div class="nav-container-item-title">
+                  雅虎财经
+                </div>
+                <div class="nav-container-item-detail">
+                  一份以英語發行，財經報導為主，總部位於英國倫敦
+                </div>
+              </div>
+              <div class="nav-container-item pointer">
+                <img
+                  class="nav-container-item-avatar"
+                  src="./avatar/logo1.png"
+                  alt=""
+                />
+                <div class="nav-container-item-title">
+                  雅虎财经
+                </div>
+                <div class="nav-container-item-detail">
+                  一份以英語發行，財經報導為主，總部位於英國倫敦
+                </div>
+              </div>
+              <div class="nav-container-item pointer">
+                <img
+                  class="nav-container-item-avatar"
+                  src="./avatar/logo1.png"
+                  alt=""
+                />
+                <div class="nav-container-item-title">
+                  雅虎财经
+                </div>
+                <div class="nav-container-item-detail">
+                  一份以英語發行，財經報導為主，總部位於英國倫敦
+                </div>
+              </div>
+              <div class="nav-container-item pointer">
+                <img
+                  class="nav-container-item-avatar"
+                  src="./avatar/logo1.png"
+                  alt=""
+                />
+                <div class="nav-container-item-title">
+                  雅虎财经
+                </div>
+                <div class="nav-container-item-detail">
+                  一份以英語發行，財經報導為主，總部位於英國倫敦
+                </div>
+              </div>
+              <div class="nav-container-item pointer">
+                <img
+                  class="nav-container-item-avatar"
+                  src="./avatar/logo1.png"
+                  alt=""
+                />
+                <div class="nav-container-item-title">
+                  雅虎财经
+                </div>
+                <div class="nav-container-item-detail">
+                  一份以英語發行，財經報導為主，總部位於英國倫敦
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <div class="content-bottom">
+          <!-- 3.3 推荐资讯 -->
+          <div class="content-recommond">
+            <div class="recommond-title">
+              推荐资讯
+            </div>
+            <div class="recommond-content">
+              <!-- <div class="recommond-content-item">
+                <img
+                  class="item-avatar pointer"
+                  src="./avatar/logo1.png"
+                  alt=""
+                />
+                <div class="item-content">
+                  <div class="item-origin">
+                    <span>FX110</span>
+                    <span>3分钟前</span>
+                  </div>
+                  <div class="item-title pointer">
+                    美日澳将先出手？全球央行或联合救市
+                  </div>
+                  <div class="item-text pointer">
+                    新冠肺炎疫情在全球范围的扩散消息持续引爆市场避险情绪，美股上周遭遇历史性大跌，三大股指均跌逾10%，欧洲市场同样“失血”不少，欧股市值蒸发约1.5万亿美元。
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <!-- 3.4 财经日历 -->
+          <div class="content-economics">
+            <div class="economics-title">
+              财经日历
+            </div>
+            <div class="economics-content">
+              <!-- <div class="economics-content-item">
+                <div class="item-time">
+                  <span>07:00</span>
+                  <img src="./avatar/logo2.png" alt="" />
+                </div>
+                <div class="item-title">韩国6月CPI年率</div>
+                <div class="item-center">
+                  <div class="item-star">
+                    <svg class="icon" aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="icon" aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <svg class="icon" aria-hidden="true">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                  </div>
+                  <div class="item-status">
+                    <span>利多</span>
+                    <span>黄金</span>
+                  </div>
+                </div>
+                <div class="item-bottom">
+                  <div class="item-value">
+                    <div class="after">前值：-0.30%</div>
+                    <div class="forecast">预测值：-0.10%</div>
+                  </div>
+                  <div class="item-btn pointer">公布值: <span>0.2%</span></div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <!-- fixed -->
+        <div class="fixed-nav">
+          <ul class="fixed-nav-list">
+            <li class="pointer"><span>常用</span></li>
+            <li class="pointer"><span>资讯</span></li>
+            <li class="pointer"><span>行业</span></li>
+            <li class="pointer"><span>监管</span></li>
+            <li class="pointer"><span>跟单</span></li>
+            <li class="pointer"><span>数据</span></li>
+            <li class="pointer"><span>平台</span></li>
+            <li class="pointer"><span>推荐资讯</span></li>
+          </ul>
+          <div class="fixed-nav-bottom">
+            <div class="to-top pointer">
+              <svg class="to-top-icon icon" aria-hidden="true">
+                <use xlink:href="#icon-invalid-name"></use>
+              </svg>
+              <div class="to-top-text">返回顶部</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- bottom -->
+      <div class="bottom">
+        <div class="bottom-container-wrapper">
+          <!-- 底部关于 -->
+          <div class="bottom-container">
+            <div class="botcontainer-detailed">
+              <div class="botcontainer-detailed-logo">
+                <img src="./avatar/bottom-logo2.png" alt="" />
+              </div>
+              <div class="botcontainer-detailed-about-wrapper">
+                <dl class="botcontainer-detailed-about">
+                  <dt class="title">外汇新手</dt>
+                  <dd class="about-text">
+                    <a href="#" class="title-link yahei">监管介绍</a>
+                  </dd>
+                  <dd class="about-text">
+                    <a href="#" class="title-link yahei">外汇测评</a>
+                  </dd>
+                  <dd class="about-text">
+                    <a href="#" class="title-link yahei">牛人榜</a>
+                  </dd>
+                  <dd class="about-text">
+                    <a href="#" class="title-link yahei">防骗宝典</a>
+                  </dd>
+                  <dd class="about-text">
+                    <a href="#" class="title-link yahei">帮助中心</a>
+                  </dd>
+                </dl>
+                <dl class="botcontainer-detailed-about">
+                  <dt class="title">线下互动</dt>
+                  <dd class="about-text">
+                    <a href="#" class="title-link yahei">讲座沙龙</a>
+                  </dd>
+                  <dd class="about-text">
+                    <a href="#" class="title-link yahei">BrokersShow</a>
+                  </dd>
+                  <dd class="about-text">
+                    <a href="#" class="title-link yahei">线下活动</a>
+                  </dd>
+                </dl>
+                <dl class="botcontainer-detailed-about">
+                  <dt class="title">客服帮助</dt>
+                  <dd class="about-text">
+                    <a href="#" class="title-link yahei">外汇资讯</a>
+                  </dd>
+                  <dd class="about-text">
+                    <a href="#" class="title-link yahei">外汇投诉</a>
+                  </dd>
+                  <dd class="about-text">
+                    <a href="#" class="title-link yahei">外汇曝光</a>
+                  </dd>
+                  <dd class="about-text">
+                    <a href="#" class="title-link yahei">维权中心</a>
+                  </dd>
+                </dl>
+                <dl class="botcontainer-detailed-about">
+                  <dt class="title">外汇栏目</dt>
+                  <dd class="about-text">
+                    <a href="#" class="title-link yahei">外汇交易商</a>
+                  </dd>
+                  <dd class="about-text">
+                    <a href="#" class="title-link yahei">虚假交易商</a>
+                  </dd>
+                  <dd class="about-text">
+                    <a href="#" class="title-link yahei">代理商</a>
+                  </dd>
+                </dl>
+                <dl class="botcontainer-detailed-about">
+                  <dt class="title">关于我们</dt>
+                  <dd class="about-text">
+                    <a href="#" class="title-link yahei">广告服务</a>
+                  </dd>
+                  <dd class="about-text">
+                    <a href="#" class="title-link yahei">友情链接</a>
+                  </dd>
+                  <dd class="about-text">
+                    <a href="#" class="title-link yahei">联系我们</a>
+                  </dd>
+                  <dd class="about-text">
+                    <a href="#" class="title-link yahei">企业简介</a>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="botcontainer-foot">
+          Copyright © 2020 FX110.COM | ALL Rights Reserved
+        </div>
+      </div>
+    </div>
+
+    <!----------------- art-templat ------------------->
+    <!-- topbar-content -->
+    <script type="text/html" id="topbar-item">
+      <div class="topbar-item">
+        <div class="topbar-item-first">
+          <div class="topbar-item-title arial">{{data.kindName}}</div>
+          <div class="topbar-item-value arial">{{data.changePercent}}</div>
+        </div>
+        <div class="topbar-item-change">
+          {{if data.changePrice.indexOf("+") != -1}}
+          <div class="topbar-item-percent green arial">{{data.changePrice}}({{data.changePercent}})</div>
+          <svg class="topbar-item-icon icon green" aria-hidden="true">
+            <use xlink:href="#icon-arrow_up"></use>
+          </svg>
+          {{/if}}
+          {{if data.changePrice.indexOf("-") != -1}}
+          <div class="topbar-item-percent red arial">{{data.changePrice}}({{data.changePercent}})</div>
+          <svg class="topbar-item-icon icon red" aria-hidden="true">
+            <use xlink:href="#icon-arrow_down"></use>
+          </svg>
+          {{/if}}
+
+        </div>
+      </div>
+    </script>
+
+    <!-- commonly-web -->
+    <script type="text/html" id="commonly-item">
+      <a class="commonlyweb-item pointer" href="{{data.url}}" target="_blank">
+        <img class="commonlyweb-item-avatar" src="{{data.logo}}" alt="" />
+        <span class="commonlyweb-item-title">{{data.name}}</span>
+      </a>
+    </script>
+
+    <!-- nav -->
+    <script type="text/html" id="nav-item">
+          <div class="nav-title-wrapper">
+            <span class="nav-title">{{data.category}}</span>
+            <svg class="nav-title-icon down icon pointer" aria-hidden="true">
+              <use xlink:href="#icon-arrow_down"></use>
+            </svg>
+          </div>
+          <div class="nav-container-wrapper">
+          <div class="nav-container">
+            {{each data.siteNavigationItemList value index }}
+            <a href="{{value.url}}" target="_blank">
+            <div class="nav-container-item pointer">
+              <img
+                class="nav-container-item-avatar"
+                src="{{value.logoUrl}}"
+                alt=""
+              />
+              <div class="nav-container-item-title">
+                {{value.name}}
+              </div>
+              <div class="nav-container-item-detail">
+                {{value.introduction}}
+              </div>
+            </div>
+          </a>
+          {{/each}}
+        </div>
+      </div>
+    </script>
+
+    <!-- recommond -->
+    <script type="text/html" id="recommond-item">
+      <div class="recommond-content-item">
+        <a href="{{data.linkUrl}}" target="_blank">
+          <img
+          class="item-avatar pointer"
+          src="./avatar/logo1.png"
+          alt=""
+          />
+        </a>
+        <div class="item-content">
+          <div class="item-origin">
+            <span>{{data.webSource}}</span>
+            <span>{{data.pubTime}}</span>
+          </div>
+        <a href="{{data.linkUrl}}" target="_blank">
+          <div class="item-title pointer">
+            {{data.title}}
+          </div>
+          <div class="item-text pointer">
+            {{data.description}}
+          </div>
+        </a>
+        </div>
+      </div>
+    </script>
+
+    <!-- economics -->
+    <script type="text/html" id="economics-item">
+      <div class="economics-content-item">
+        <div class="item-time">
+          <span>{{data.releasedTime}}</span>
+          {{if data.nationalFlag}}
+          <img src="./avatar/logo2.png" alt="" />
+          {{/if}}
+        </div>
+        <div class="item-title">{{data.title}}</div>
+        <div class="item-center">
+          <div class="item-star">
+            {{if data.star>=1}}
+            <svg class="icon icon1" aria-hidden="true">
+              <use xlink:href="#icon-star"></use>
+            </svg>
+            {{else}}
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-star"></use>
+            </svg>
+            {{/if}}
+            {{if data.star>=2}}
+            <svg class="icon icon1" aria-hidden="true">
+              <use xlink:href="#icon-star"></use>
+            </svg>
+            {{else}}
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-star"></use>
+            </svg>
+            {{/if}}
+            {{if data.star>=3}}
+            <svg class="icon icon1" aria-hidden="true">
+              <use xlink:href="#icon-star"></use>
+            </svg>
+            {{else}}
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-star"></use>
+            </svg>
+            {{/if}}
+            {{if data.star>=4}}
+            <svg class="icon icon1" aria-hidden="true">
+              <use xlink:href="#icon-star"></use>
+            </svg>
+            {{else}}
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-star"></use>
+            </svg>
+            {{/if}}
+            {{if data.star>=5}}
+            <svg class="icon icon1" aria-hidden="true">
+              <use xlink:href="#icon-star"></use>
+            </svg>
+            {{else}}
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-star"></use>
+            </svg>
+            {{/if}}
+
+
+          </div>
+          <div class="item-status green">
+            {{if data.impact===0}}
+            <span>未公布</span>
+            {{/if}}
+            {{if data.impact===1}}
+            <span>无影响</span>
+            {{/if}}
+            {{if data.impact===2}}
+            <span>影响较小</span>
+            {{/if}}
+            {{if data.impact===3}}
+            <span>利空</span>
+            {{/if}}
+            {{if data.impact===4}}
+            <span>利多</span>
+            {{/if}}
+            <span>黄金</span>
+          </div>
+        </div>
+        <div class="item-bottom">
+          <div class="item-value">
+            <div class="after">前值：{{data.previous}}</div>
+            <div class="forecast">预测值：{{data.consensus}}</div>
+          </div>
+          <div class="item-btn pointer">公布值: <span>{{data.actual}}</span></div>
+        </div>
+      </div>
+    </script>
+    <script src="./js/topbar.js"></script>
+    <script src="./js/commonly-web.js"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/recommend.js"></script>
+    <script src="./js/economics.js"></script>
+    <script src="./js/fixed.js"></script>
+  </body>
+</html>

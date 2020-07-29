@@ -1,0 +1,47 @@
+.topbar {
+  width: 100%;
+  background: #1a1a1f;
+  display: flex;
+}
+.topbar .topbar-item {
+  flex: 1;
+  border-right: 2px solid #363232;
+  padding: 9px 24px 13px;
+}
+.topbar .topbar-item-first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+.topbar .topbar-item-title {
+  height: 24px;
+  opacity: 0.87;
+  font-size: 12px;
+  line-height: 2;
+  color: #ffffff;
+}
+.topbar .topbar-item-value {
+  height: 24px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 2;
+  color: rgba(255, 255, 255, 0.87);
+}
+.topbar .topbar-item-change {
+  height: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topbar .topbar-item-change .topbar-item-icon {
+  font-size: 16px;
+  font-weight: bold;
+}
+.topbar .topbar-item-percent {
+  height: 22px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.22;
+}

@@ -1,0 +1,81 @@
+.navbar {
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 8px;
+}
+.navbar-search-wrapper {
+  width: 100%;
+  box-shadow: 0 0 4px 0 #cbd6f3;
+}
+.navbar-search-content {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 166px 0 158px;
+  box-sizing: border-box;
+}
+.navbar-logo {
+  width: 180px;
+  height: 43px;
+  margin: 62px 36px 34px 0;
+}
+.navbar-logo-img {
+  width: 100%;
+  height: 100%;
+}
+.navbar-search {
+  margin: 30px 0;
+}
+.navbar-search .navbar-searach-select {
+  display: flex;
+}
+.navbar-search .navbar-searach-select li {
+  height: 32px;
+  line-height: 32px;
+  padding: 0 16px;
+  color: rgba(0, 0, 0, 0.38);
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+.navbar-search .navbar-searach-select .dealer {
+  color: #1b50d5;
+}
+.navbar-search .navbar-searach-select .active {
+  background-color: #1b50d5;
+  color: rgba(255, 255, 255, 0.87);
+  font-weight: bold;
+}
+.navbar-search .navbar-search-input {
+  width: 540px;
+  height: 48px;
+  border: solid 1px #7d9dec;
+  box-sizing: border-box;
+}
+.navbar-search .navbar-search-input input {
+  height: 100%;
+  width: 100%;
+  padding: 13px 0 13px 16px;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+.navbar-search .navbar-search-input input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.38);
+}
+.navbar-btn {
+  width: 120px;
+  height: 48px;
+  margin-top: 62px;
+  border-radius: 2px;
+  background-color: #1b50d5;
+}
+.navbar-btn button {
+  width: 100%;
+  height: 100%;
+  background: #1b50d5;
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}

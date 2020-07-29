@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .warning-container {
+      width: 100%;
+      height: 976px;
+      background: rgba(246, 246, 246, 1);
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+
+    .warning-text {
+      width: 1200px;
+      height: 500px;
+      background: rgba(255, 255, 255, 1);
+      margin: 0 auto;
+    }
+
+    .warning-img {
+      width: 158px;
+      margin-top: 35px;
+      margin-bottom: 42px;
+    }
+
+    .warning-text-danger {
+      height: 24px;
+      font-size: 18px;
+      font-weight: bold;
+      color: rgba(167, 17, 34, 1);
+      line-height: 24px;
+      margin-bottom: 16px;
+    }
+
+    .warning-text-fx {
+      height: 19px;
+      font-size: 14px;
+      color: rgba(48, 48, 48, 0.87);
+      line-height: 19px;
+      margin-bottom: 16px;
+    }
+
+    .warning-text-url {
+      height: 19px;
+      font-size: 14px;
+      color: rgba(48, 48, 48, 0.54);
+      line-height: 14px;
+      margin-bottom: 92px;
+    }
+
+    .warning-footer {
+      height: 80px;
+      width: 1080px;
+      font-size: 14px;
+      border-top: 1px solid rgba(243, 243, 243, 1);
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    li {
+      list-style-type: none;
+      text-align: center;
+    }
+
+    li>img{
+      width: 19px;
+    }
+
+    .warning-footer-left {
+      color: rgba(48, 48, 48, 0.54);
+      float: left;
+      margin-top: 27px;
+    }
+
+    .warning-footer-right>a {
+      margin: 27px;
+      color: rgba(27, 80, 213, 1);
+      float: right;
+    }
+
+    button {
+      width: 150px;
+      height: 40px;
+      color: rgba(255, 255, 255, 0.87);
+      background: rgba(167, 17, 34, 1);
+      float: right;
+      margin: 16px;
+      margin-right: 0;
+    }
+
+    .warning-footer:after {
+      clear: both;
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      visibility: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="warning-container">
+    <div class="warning-text">
+      <img class="warning-img"
+        src="../warning/images/238.jpg"
+        alt="访问的网站存在危险" />
+      <div class="warning-text-danger">您访问的网站存在危险</div>
+      <div class="warning-text-fx">
+        经FX安全中心确认，当前页面含有大量未经证实的信息，访问含有欺诈内容的网站可能会给您造成财产损失或隐私泄露，请您谨慎访问。
+      </div>
+      <div class="warning-text-url">您访问的网站：www.baidu.com</div>
+      <ul class="warning-footer">
+        <li class="warning-footer-left">
+          <img src="../warning/images/help.png" alt="">
+        </li>
+        <li class="warning-footer-left"><a href="">误报申诉</a></li>
+        <li class="warning-footer-right"><button onclick="window.close();">关闭页面</button></li>
+        <li class="warning-footer-right"><a href="">忽略警告，继续访问</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+<script>
+</script>
+
+</html>
